@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import {HiLocationMarker} from 'react-icons/hi'
 const Hero = () => {
   return (
     <section className='hero-warpper'>
@@ -21,8 +22,10 @@ const Hero = () => {
                 <span>Forget all the hassle of finding your new home</span>
             </div>
 
-            <div className="search-bar">
-                Search-bar
+            <div className="flexCenter search-bar">
+                <HiLocationMarker color="var(--blue)" size={25}/>
+                <input type='text'/>
+                <button className='button'>Search</button>
             </div>
         </div>
 
